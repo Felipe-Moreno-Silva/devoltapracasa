@@ -24,8 +24,8 @@ function conteudoFacilitadores(event){
 	
 	var botaoId = botao.id;
 
-	var modalMichel = "<section id='sessao-michel'> <div> <h3 id='nome-michel'>- Michel Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-michel'>Mahatma, Professor e master coach há mais de duas décadas, professor de yoga certificado internacionalmente, estudioso do yoga pré-clássico, raja yoga e hatha yoga, jnana yoga além de neurociência, física quântica e espiritualidade.</p> </section>";
-	var modalCarla = "<section id='sessao-carla'> <div> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-carla'>Praticante e Professora de Yoga certificada internacionalmente. Sua primeira formação, em vinyasa Yoga, em 1998 influenciou não somente sua jornada de autodescoberta, mas suas conduções até hoje. Especialista em vinyasa yoga, yoga medicina, sagrado ser e xamanismo, Carla Shakti é Espiritualista, terapeuta holística, mulher medicina, profunda conhecedora das ervas, medicina do cacau e óleos essenciais. Leva em suas conduções toda guiança ancestral e sua sensibilidade, resultando em uma experiência energética e transcendental.</p></section>"
+	var modalMichel = "<section id='sessao-michel' class='sessao-facilitadores'> <div> <h3 id='nome-michel'>- Michel Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-michel'>Mahatma, Professor e master coach há mais de duas décadas, professor de yoga certificado internacionalmente, estudioso do yoga pré-clássico, raja yoga e hatha yoga, jnana yoga além de neurociência, física quântica e espiritualidade.</p> </section>";
+	var modalCarla = "<section id='sessao-carla' class='sessao-facilitadores'> <div> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-carla'>Praticante e Professora de Yoga certificada internacionalmente. Sua primeira formação, em vinyasa Yoga, em 1998 influenciou não somente sua jornada de autodescoberta, mas suas conduções até hoje. Especialista em vinyasa yoga, yoga medicina, sagrado ser e xamanismo, Carla Shakti é Espiritualista, terapeuta holística, mulher medicina, profunda conhecedora das ervas, medicina do cacau e óleos essenciais. Leva em suas conduções toda guiança ancestral e sua sensibilidade, resultando em uma experiência energética e transcendental.</p></section>"
 
 	var sessao = "";
 
@@ -39,7 +39,7 @@ function conteudoFacilitadores(event){
 		 sessao = sessaoMichel;
 
 		 var txtFacilitadores = sessao.children[1];
-      	txtFacilitadores.style.display = "block";
+    	txtFacilitadores.style.display = "inline";
 
 		sessaoTransicaoAbrir(sessao,txtFacilitadores);
 		sessaoTransicaoAbrirMichel(sessao);
@@ -54,7 +54,8 @@ function conteudoFacilitadores(event){
 		sessao = sessaoCarla;
 
 		var txtFacilitadores = sessao.children[1];
-       	txtFacilitadores.style.display = "block";
+	   	txtFacilitadores.style.display = "inline";
+
 		sessaoTransicaoAbrir(sessao,txtFacilitadores);
 		sessaoTransicaoAbrirCarla(sessao);
 
@@ -99,6 +100,7 @@ function sessaoTransicaoAbrir(sessao,txtFacilitadores){
 
      	txtFacilitadores.style.transition = "all .75s ease";
     	txtFacilitadores.style.opacity = "1";
+	
 
     	sessaoImg.style.transition = "all .75s ease";
     	sessaoImg.classList.toggle('imagem-em-escala-de-cinza');
@@ -109,13 +111,13 @@ function sessaoTransicaoAbrir(sessao,txtFacilitadores){
 
 function sessaoTransicaoAbrirMichel(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "180px";
+	sessao.style.height = "200px";
 	}, 1);
 }
 
 function sessaoTransicaoAbrirCarla(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "320px";
+	sessao.style.height = "340px";
 	}, 1);
 }
 
