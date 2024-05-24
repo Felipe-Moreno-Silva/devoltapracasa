@@ -1,26 +1,43 @@
 @font-face {
     font-family: 'Daily Book Inline';
     src: url('fonts/Daily Book Inline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Strawberry Chocolate';
     src: url('fonts/Strawberry Chocolate.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retrocycles';
+    src: url('fonts/Retrocycles.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
 	font-family:'verdana';
 	src: url('fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
 	font-family:'verdana-bold';
 	src: url('fonts/verdana-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
 	font-family:'verdana-bold-italic';
 	src: url('fonts/verdana-bold-italic.ttf') format('truetype');
+ 	font-weight: bold;
+    font-style: italic;
 }
 
 *{
