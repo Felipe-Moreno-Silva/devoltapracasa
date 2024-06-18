@@ -25,7 +25,7 @@ function conteudoFacilitadores(event){
 	var botaoId = botao.id;
 
 	var modalMichel = "<section id='sessao-michel' class='sessao-facilitadores'> <div> <h3 id='nome-michel'>- Michel Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-michel'>Mahatma, Professor e master coach há mais de duas décadas, professor de yoga certificado internacionalmente, estudioso do yoga pré-clássico, raja yoga e hatha yoga, jnana yoga além de neurociência, física quântica e espiritualidade.</p> </section>";
-	var modalCarla = "<section id='sessao-carla' class='sessao-facilitadores'> <div> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-carla'>Praticante e Professora de Yoga certificada internacionalmente. Sua primeira formação, em vinyasa Yoga, em 1998 influenciou não somente sua jornada de autodescoberta, mas suas conduções até hoje. Especialista em vinyasa yoga, yoga medicina, sagrado ser e xamanismo, Carla Shakti é Espiritualista, terapeuta holística, mulher medicina, profunda conhecedora das ervas, medicina do cacau e óleos essenciais. Leva em suas conduções toda guiança ancestral e sua sensibilidade, resultando em uma experiência energética e transcendental.</p></section>"
+	var modalCarla = "<section id='sessao-carla' class='sessao-facilitadores'> <div> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <button class='botao-fechar' onclick='ocultarConteudo(event)'> <span class='linha-fechar1'></span> <span class='linha-fechar2'></span> </button> </div> <p id='conteudo-carla'>Professora de Yoga certificada desde 1998, especialista em vinyasa Yoga, yoga medicina/vibracional, sacerdotisa do sagrado ser, espiritualista, terapeuta holística, mulher medicina da nação sioux, conhecedora das ervas, medicina do cacau e óleos essenciais. Sua guiança ancestral e toda sua sensibilidade oferece uma experiência energética e transcendental.</p></section>"
 
 	var sessao = "";
 
@@ -111,13 +111,13 @@ function sessaoTransicaoAbrir(sessao,txtFacilitadores){
 
 function sessaoTransicaoAbrirMichel(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "200px";
+	sessao.style.height = "160px";
 	}, 1);
 }
 
 function sessaoTransicaoAbrirCarla(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "340px";
+	sessao.style.height = "220px";
 	}, 1);
 }
 
@@ -131,7 +131,7 @@ function ocultarConteudo(botaoFechar){
 	var sessao = botaoFechar.parentNode.parentNode;
 	var sessaoId = sessao.id;
 	var botaoMichel = "<button id='botao-michel' class='botao-facilitadores'onclick='conteudoFacilitadores(event)'> <h3 id='nome-michel'>- Michel Moreno -</h3> <p id='conteudo-michel'>Mahatma, Professor e master coach há mais de duas décadas, professor de yoga certificado internacionalmente, estudioso do yoga pré-clássico, raja yoga e hatha yoga, jnana yoga além de neurociência, física quântica e espiritualidade.</p> </button>"
-	var botaoCarla = "<button id='botao-carla' class='botao-facilitadores'onclick='conteudoFacilitadores(event)'> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <p id='conteudo-carla'>Praticante e Professora de Yoga certificada internacionalmente. Sua primeira formação, em vinyasa Yoga, em 1998 influenciou não somente sua jornada de autodescoberta, mas suas conduções até hoje. Especialista em vinyasa yoga, yoga medicina, sagrado ser e xamanismo, Carla Shakti é Espiritualista, terapeuta holística, mulher medicina, profunda conhecedora das ervas, medicina do cacau e óleos essenciais. Leva em suas conduções toda guiança ancestral e sua sensibilidade, resultando em uma experiência energética e transcendental.</p> </button>"
+	var botaoCarla = "<button id='botao-carla' class='botao-facilitadores'onclick='conteudoFacilitadores(event)'> <h3 id='nome-carla'>- Carla Shakti Moreno -</h3> <p id='conteudo-carla'>Professora de Yoga certificada desde 1998, especialista em vinyasa Yoga, yoga medicina/vibracional, sacerdotisa do sagrado ser, espiritualista, terapeuta holística, mulher medicina da nação sioux, conhecedora das ervas, medicina do cacau e óleos essenciais. Sua guiança ancestral e toda sua sensibilidade oferece uma experiência energética e transcendental.</p> </button>"
 
 
 	if(sessaoId == "sessao-michel"){
