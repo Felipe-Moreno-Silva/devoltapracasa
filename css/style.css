@@ -64,7 +64,7 @@ h1{
 
 h2{
 	font-family: "Daily Book Inline";
-	font-size: 28px;
+	font-size: 30px;
 	margin: 0;
 	font-weight: normal;
 	margin-bottom: 12px;
@@ -76,8 +76,12 @@ h3{
 }
 
 p{
-	font-size: 12px;
+	font-size: 16px;
 	margin: 0 0 10px 0;
+}
+
+b{
+	font-size: 16px;
 }
 
 ul{
@@ -123,11 +127,15 @@ img{
 }
 
 .txt-destaque{
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .sessao-com-img{
 
+}
+
+.box-padding{
+	padding: 20px;
 }
 
 .conteudo-segunda-sessao{
@@ -148,9 +156,15 @@ img{
 	margin: 12px 0;
 }
 
+
+
+
 .conteudo-quinta-sessao{
 	background-color:#DED00D;
-	padding: 20px;
+}
+
+.conteudo-quinta-sessao img{
+	width: 100%;
 }
 
 .conteudo-quinta-sessao ul li{
@@ -219,6 +233,9 @@ img{
 	height: 230px;
 }
 
+
+
+
 .conteudo-setima-sessao{
 	background-color:#2B9A03;
 	padding: 20px;
@@ -244,6 +261,15 @@ img{
   background-image: url('../imgs/icone-check-branco.png');
   background-size: 20px 15px; 
 }
+
+.conteudo-setima-sessao img{
+	width: 100%;
+	margin: 10px 0 20px 0;
+}
+
+
+
+
 
 .conteudo-oitava-sessao{
 	height: 350px;
@@ -302,6 +328,10 @@ img{
     transition: transform 0.3s ease;
 }
 
+.imgs-carrossel div b{
+	font-size: 20px;
+}
+
 .imgs-carrossel div{
 	width: 100%;
 	padding: 6px;
@@ -325,7 +355,7 @@ img{
 }
 
 .botao-carrossel{
-	width: 40px;
+	width: 27px;
 	height: 40px;
 	background-color: transparent;
 	border: none;
@@ -344,11 +374,11 @@ img{
 }
 
 #botao-anterior{
-	left:0;
+	left:3px;
 }
 
 #botao-proximo{
-	right:0;
+	right:3px;
 }
 
 .conteudo-nona-sessao{
@@ -491,13 +521,13 @@ img{
 .depoimento-destaque article{
 	width: calc(100% - 40px);
 	background-color: #50086A;
-	padding: 16px;
+	padding: 16px 16px 30px 16px;
 	position: relative;
 }
 
 .depoimento-destaque article p{
 	font-family: "Strawberry Chocolate";
-	font-size: 13px;
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -514,18 +544,18 @@ img{
 	width: 100%;
 	height: inherit;
 	background-color: #50086A;
-	padding: 16px;
+	padding: 20px;
 	position: relative;
 }
 
 .depoimento article p{
 	font-family: "Strawberry Chocolate";
-	font-size: 13px;
+	font-size: 16px;
 	text-align: justify;
 }
 
 .nome-participantes{
-	font-size: 10px;
+	font-size: 14px;
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -594,6 +624,7 @@ img{
 	text-align: center;
 	font-family: "Strawberry Chocolate";
 	font-size: 16px;
+	text-shadow: 1px 1px 6px rgba(27, 27, 27, .75);
 }
 
 .ultima-sessao b:first-child{

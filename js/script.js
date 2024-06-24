@@ -111,13 +111,13 @@ function sessaoTransicaoAbrir(sessao,txtFacilitadores){
 
 function sessaoTransicaoAbrirMichel(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "160px";
+	sessao.style.height = "180px";
 	}, 1);
 }
 
 function sessaoTransicaoAbrirCarla(sessao){
 	setTimeout(function tempoAbrir(){
-	sessao.style.height = "220px";
+	sessao.style.height = "240px";
 	}, 1);
 }
 
